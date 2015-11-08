@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AFProfileViewController.h
 //  AnimationFun
 //
 //  Created by Wesley St. John on 11/5/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AFProfileViewController : UIViewController
 
 @end
-

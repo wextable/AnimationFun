@@ -7,25 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650E78A61BED4A9B008274B5 /* AFUIViewCollectionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 650E78A51BED4A9B008274B5 /* AFUIViewCollectionAnimator.m */; };
+		650E78AE1BED524E008274B5 /* icon_batman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78A71BED524E008274B5 /* icon_batman@2x.png */; };
+		650E78AF1BED524E008274B5 /* icon_captainAmerica@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78A81BED524E008274B5 /* icon_captainAmerica@2x.png */; };
+		650E78B01BED524E008274B5 /* icon_flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78A91BED524E008274B5 /* icon_flash@2x.png */; };
+		650E78B11BED524E008274B5 /* icon_ironman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78AA1BED524E008274B5 /* icon_ironman@2x.png */; };
+		650E78B21BED524E008274B5 /* icon_spiderman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78AB1BED524E008274B5 /* icon_spiderman@2x.png */; };
+		650E78B31BED524E008274B5 /* icon_superman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78AC1BED524E008274B5 /* icon_superman@2x.png */; };
+		650E78B41BED524E008274B5 /* icon_thor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78AD1BED524E008274B5 /* icon_thor@2x.png */; };
+		650E78BC1BEE6724008274B5 /* icon_aquaman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78B51BEE6724008274B5 /* icon_aquaman@2x.png */; };
+		650E78BD1BEE6724008274B5 /* icon_avengers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78B61BEE6724008274B5 /* icon_avengers@2x.png */; };
+		650E78BE1BEE6724008274B5 /* icon_fantasticfour@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78B71BEE6724008274B5 /* icon_fantasticfour@2x.png */; };
+		650E78BF1BEE6724008274B5 /* icon_greenlantern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78B81BEE6724008274B5 /* icon_greenlantern@2x.png */; };
+		650E78C01BEE6724008274B5 /* icon_nightcrawler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78B91BEE6724008274B5 /* icon_nightcrawler@2x.png */; };
+		650E78C11BEE6724008274B5 /* icon_noidea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78BA1BEE6724008274B5 /* icon_noidea@2x.png */; };
+		650E78C21BEE6724008274B5 /* icon_robin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78BB1BEE6724008274B5 /* icon_robin@2x.png */; };
+		650E78C41BEE6A29008274B5 /* icon_options@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650E78C31BEE6A29008274B5 /* icon_options@2x.png */; };
+		650E78C71BEE7AC1008274B5 /* AFOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650E78C61BEE7AC1008274B5 /* AFOptionsController.m */; };
+		6570749E1BEC208700F623B6 /* UIView+AFAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6570749D1BEC208700F623B6 /* UIView+AFAnimation.m */; };
+		657074A31BEC603600F623B6 /* AFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657074A21BEC603600F623B6 /* AFProfileViewController.m */; };
+		657074A81BEC614C00F623B6 /* AFCircleTransitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 657074A71BEC614C00F623B6 /* AFCircleTransitionObject.m */; };
+		657074AA1BEC808E00F623B6 /* wes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 657074A91BEC808E00F623B6 /* wes@2x.png */; };
 		65A62FEA1BEBB8B400F3E2DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FE91BEBB8B400F3E2DF /* main.m */; };
 		65A62FED1BEBB8B400F3E2DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FEC1BEBB8B400F3E2DF /* AppDelegate.m */; };
-		65A62FF01BEBB8B400F3E2DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FEF1BEBB8B400F3E2DF /* ViewController.m */; };
+		65A62FF01BEBB8B400F3E2DF /* AFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FEF1BEBB8B400F3E2DF /* AFHomeViewController.m */; };
 		65A62FF31BEBB8B400F3E2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A62FF11BEBB8B400F3E2DF /* Main.storyboard */; };
 		65A62FF51BEBB8B400F3E2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A62FF41BEBB8B400F3E2DF /* Assets.xcassets */; };
 		65A62FF81BEBB8B400F3E2DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A62FF61BEBB8B400F3E2DF /* LaunchScreen.storyboard */; };
+		65A630011BEBBC4E00F3E2DF /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A630001BEBBC4E00F3E2DF /* star@2x.png */; };
+		65A630051BEBBCB300F3E2DF /* AFToggleButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A630041BEBBCB300F3E2DF /* AFToggleButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650E78A41BED4A9B008274B5 /* AFUIViewCollectionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFUIViewCollectionAnimator.h; sourceTree = "<group>"; };
+		650E78A51BED4A9B008274B5 /* AFUIViewCollectionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFUIViewCollectionAnimator.m; sourceTree = "<group>"; };
+		650E78A71BED524E008274B5 /* icon_batman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_batman@2x.png"; sourceTree = "<group>"; };
+		650E78A81BED524E008274B5 /* icon_captainAmerica@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_captainAmerica@2x.png"; sourceTree = "<group>"; };
+		650E78A91BED524E008274B5 /* icon_flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_flash@2x.png"; sourceTree = "<group>"; };
+		650E78AA1BED524E008274B5 /* icon_ironman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ironman@2x.png"; sourceTree = "<group>"; };
+		650E78AB1BED524E008274B5 /* icon_spiderman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_spiderman@2x.png"; sourceTree = "<group>"; };
+		650E78AC1BED524E008274B5 /* icon_superman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_superman@2x.png"; sourceTree = "<group>"; };
+		650E78AD1BED524E008274B5 /* icon_thor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_thor@2x.png"; sourceTree = "<group>"; };
+		650E78B51BEE6724008274B5 /* icon_aquaman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_aquaman@2x.png"; sourceTree = "<group>"; };
+		650E78B61BEE6724008274B5 /* icon_avengers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avengers@2x.png"; sourceTree = "<group>"; };
+		650E78B71BEE6724008274B5 /* icon_fantasticfour@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fantasticfour@2x.png"; sourceTree = "<group>"; };
+		650E78B81BEE6724008274B5 /* icon_greenlantern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_greenlantern@2x.png"; sourceTree = "<group>"; };
+		650E78B91BEE6724008274B5 /* icon_nightcrawler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nightcrawler@2x.png"; sourceTree = "<group>"; };
+		650E78BA1BEE6724008274B5 /* icon_noidea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_noidea@2x.png"; sourceTree = "<group>"; };
+		650E78BB1BEE6724008274B5 /* icon_robin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_robin@2x.png"; sourceTree = "<group>"; };
+		650E78C31BEE6A29008274B5 /* icon_options@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_options@2x.png"; sourceTree = "<group>"; };
+		650E78C51BEE7AC1008274B5 /* AFOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOptionsController.h; sourceTree = "<group>"; };
+		650E78C61BEE7AC1008274B5 /* AFOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOptionsController.m; sourceTree = "<group>"; };
+		6570749C1BEC208700F623B6 /* UIView+AFAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AFAnimation.h"; sourceTree = "<group>"; };
+		6570749D1BEC208700F623B6 /* UIView+AFAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AFAnimation.m"; sourceTree = "<group>"; };
+		657074A11BEC603600F623B6 /* AFProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFProfileViewController.h; sourceTree = "<group>"; };
+		657074A21BEC603600F623B6 /* AFProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFProfileViewController.m; sourceTree = "<group>"; };
+		657074A61BEC614C00F623B6 /* AFCircleTransitionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCircleTransitionObject.h; sourceTree = "<group>"; };
+		657074A71BEC614C00F623B6 /* AFCircleTransitionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFCircleTransitionObject.m; sourceTree = "<group>"; };
+		657074A91BEC808E00F623B6 /* wes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wes@2x.png"; sourceTree = "<group>"; };
 		65A62FE51BEBB8B400F3E2DF /* AnimationFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A62FE91BEBB8B400F3E2DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65A62FEB1BEBB8B400F3E2DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65A62FEC1BEBB8B400F3E2DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65A62FEE1BEBB8B400F3E2DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		65A62FEF1BEBB8B400F3E2DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65A62FEE1BEBB8B400F3E2DF /* AFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHomeViewController.h; sourceTree = "<group>"; };
+		65A62FEF1BEBB8B400F3E2DF /* AFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHomeViewController.m; sourceTree = "<group>"; };
 		65A62FF21BEBB8B400F3E2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65A62FF41BEBB8B400F3E2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A62FF71BEBB8B400F3E2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A62FF91BEBB8B400F3E2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A630001BEBBC4E00F3E2DF /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		65A630031BEBBCB300F3E2DF /* AFToggleButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFToggleButtonView.h; sourceTree = "<group>"; };
+		65A630041BEBBCB300F3E2DF /* AFToggleButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFToggleButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +91,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650E78A31BED4A83008274B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				650E78A41BED4A9B008274B5 /* AFUIViewCollectionAnimator.h */,
+				650E78A51BED4A9B008274B5 /* AFUIViewCollectionAnimator.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		657074A01BEC601800F623B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65A62FEE1BEBB8B400F3E2DF /* AFHomeViewController.h */,
+				65A62FEF1BEBB8B400F3E2DF /* AFHomeViewController.m */,
+				657074A11BEC603600F623B6 /* AFProfileViewController.h */,
+				657074A21BEC603600F623B6 /* AFProfileViewController.m */,
+				650E78C51BEE7AC1008274B5 /* AFOptionsController.h */,
+				650E78C61BEE7AC1008274B5 /* AFOptionsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		657074A41BEC612400F623B6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6570749C1BEC208700F623B6 /* UIView+AFAnimation.h */,
+				6570749D1BEC208700F623B6 /* UIView+AFAnimation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		657074A51BEC613800F623B6 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				657074A61BEC614C00F623B6 /* AFCircleTransitionObject.h */,
+				657074A71BEC614C00F623B6 /* AFCircleTransitionObject.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		65A62FDC1BEBB8B400F3E2DF = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +150,14 @@
 		65A62FE71BEBB8B400F3E2DF /* AnimationFun */ = {
 			isa = PBXGroup;
 			children = (
+				650E78A31BED4A83008274B5 /* Helpers */,
+				657074A51BEC613800F623B6 /* Transitions */,
+				657074A41BEC612400F623B6 /* Categories */,
+				657074A01BEC601800F623B6 /* Controllers */,
+				65A630021BEBBC5800F3E2DF /* Views */,
+				65A62FFF1BEBBC3A00F3E2DF /* Images */,
 				65A62FEB1BEBB8B400F3E2DF /* AppDelegate.h */,
 				65A62FEC1BEBB8B400F3E2DF /* AppDelegate.m */,
-				65A62FEE1BEBB8B400F3E2DF /* ViewController.h */,
-				65A62FEF1BEBB8B400F3E2DF /* ViewController.m */,
 				65A62FF11BEBB8B400F3E2DF /* Main.storyboard */,
 				65A62FF41BEBB8B400F3E2DF /* Assets.xcassets */,
 				65A62FF61BEBB8B400F3E2DF /* LaunchScreen.storyboard */,
@@ -77,6 +173,39 @@
 				65A62FE91BEBB8B400F3E2DF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65A62FFF1BEBBC3A00F3E2DF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				650E78C31BEE6A29008274B5 /* icon_options@2x.png */,
+				65A630001BEBBC4E00F3E2DF /* star@2x.png */,
+				657074A91BEC808E00F623B6 /* wes@2x.png */,
+				650E78A71BED524E008274B5 /* icon_batman@2x.png */,
+				650E78A81BED524E008274B5 /* icon_captainAmerica@2x.png */,
+				650E78A91BED524E008274B5 /* icon_flash@2x.png */,
+				650E78AB1BED524E008274B5 /* icon_spiderman@2x.png */,
+				650E78AC1BED524E008274B5 /* icon_superman@2x.png */,
+				650E78AD1BED524E008274B5 /* icon_thor@2x.png */,
+				650E78AA1BED524E008274B5 /* icon_ironman@2x.png */,
+				650E78B51BEE6724008274B5 /* icon_aquaman@2x.png */,
+				650E78B61BEE6724008274B5 /* icon_avengers@2x.png */,
+				650E78B71BEE6724008274B5 /* icon_fantasticfour@2x.png */,
+				650E78B81BEE6724008274B5 /* icon_greenlantern@2x.png */,
+				650E78B91BEE6724008274B5 /* icon_nightcrawler@2x.png */,
+				650E78BA1BEE6724008274B5 /* icon_noidea@2x.png */,
+				650E78BB1BEE6724008274B5 /* icon_robin@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		65A630021BEBBC5800F3E2DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65A630031BEBBCB300F3E2DF /* AFToggleButtonView.h */,
+				65A630041BEBBCB300F3E2DF /* AFToggleButtonView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +265,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650E78BD1BEE6724008274B5 /* icon_avengers@2x.png in Resources */,
+				650E78BE1BEE6724008274B5 /* icon_fantasticfour@2x.png in Resources */,
+				650E78C01BEE6724008274B5 /* icon_nightcrawler@2x.png in Resources */,
+				650E78BF1BEE6724008274B5 /* icon_greenlantern@2x.png in Resources */,
+				650E78C41BEE6A29008274B5 /* icon_options@2x.png in Resources */,
+				650E78BC1BEE6724008274B5 /* icon_aquaman@2x.png in Resources */,
 				65A62FF81BEBB8B400F3E2DF /* LaunchScreen.storyboard in Resources */,
+				650E78B21BED524E008274B5 /* icon_spiderman@2x.png in Resources */,
 				65A62FF51BEBB8B400F3E2DF /* Assets.xcassets in Resources */,
+				657074AA1BEC808E00F623B6 /* wes@2x.png in Resources */,
+				65A630011BEBBC4E00F3E2DF /* star@2x.png in Resources */,
+				650E78B01BED524E008274B5 /* icon_flash@2x.png in Resources */,
+				650E78B41BED524E008274B5 /* icon_thor@2x.png in Resources */,
+				650E78AE1BED524E008274B5 /* icon_batman@2x.png in Resources */,
+				650E78C11BEE6724008274B5 /* icon_noidea@2x.png in Resources */,
 				65A62FF31BEBB8B400F3E2DF /* Main.storyboard in Resources */,
+				650E78AF1BED524E008274B5 /* icon_captainAmerica@2x.png in Resources */,
+				650E78C21BEE6724008274B5 /* icon_robin@2x.png in Resources */,
+				650E78B11BED524E008274B5 /* icon_ironman@2x.png in Resources */,
+				650E78B31BED524E008274B5 /* icon_superman@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A62FF01BEBB8B400F3E2DF /* ViewController.m in Sources */,
+				65A62FF01BEBB8B400F3E2DF /* AFHomeViewController.m in Sources */,
+				6570749E1BEC208700F623B6 /* UIView+AFAnimation.m in Sources */,
 				65A62FED1BEBB8B400F3E2DF /* AppDelegate.m in Sources */,
+				657074A31BEC603600F623B6 /* AFProfileViewController.m in Sources */,
 				65A62FEA1BEBB8B400F3E2DF /* main.m in Sources */,
+				657074A81BEC614C00F623B6 /* AFCircleTransitionObject.m in Sources */,
+				650E78C71BEE7AC1008274B5 /* AFOptionsController.m in Sources */,
+				650E78A61BED4A9B008274B5 /* AFUIViewCollectionAnimator.m in Sources */,
+				65A630051BEBBCB300F3E2DF /* AFToggleButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +450,7 @@
 				65A62FFE1BEBB8B400F3E2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
