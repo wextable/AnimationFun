@@ -20,6 +20,8 @@
 
 - (void)spinUpViewWithDelay:(CGFloat)delay duration:(CGFloat)duration {
     
+    [self.layer removeAllAnimations];
+    
     CGAffineTransform transform = CGAffineTransformIdentity;
     transform = CGAffineTransformScale(transform, 0.01, 0.01);
     transform = CGAffineTransformRotate(transform, -M_PI_2);
@@ -28,12 +30,6 @@
     CGFloat springDamping = 0.55;
     CGFloat springVelocity = 1.0;
     
-    
-    transform = self.transform;
-    transform = CGAffineTransformScale(transform, 100.0, 100.0);
-    transform = CGAffineTransformRotate(transform, M_PI_2);
-    
-    
     [UIView animateWithDuration:duration
                           delay:delay
          usingSpringWithDamping:springDamping
@@ -41,7 +37,7 @@
                         options:0
                      animations:^{
                          
-                         self.transform = transform;
+                         self.transform = CGAffineTransformIdentity;
                          
                      } completion:^(BOOL finished) {
 
@@ -55,6 +51,8 @@
 
 - (void)spinDownViewWithDelay:(CGFloat)delay duration:(CGFloat)duration {
 
+    [self.layer removeAllAnimations];
+    
     CGFloat duration1 = duration * 0.2;
     CGFloat duration2 = duration - duration1;
     
@@ -68,20 +66,19 @@
                      animations:^{
                 
         self.transform = intermediateTransform;
-        
-        
+                
     } completion:^(BOOL finished) {
         
         [UIView animateWithDuration:duration2
                          animations:^{
             
             CGAffineTransform transform = intermediateTransform;
-            transform = CGAffineTransformScale(transform, 0.01, 0.01);
             transform = CGAffineTransformRotate(transform, -M_PI_2);
+            transform = CGAffineTransformScale(transform, 0.001, 0.001);
             self.transform = transform;
             
         } completion:^(BOOL finished) {
-            self.transform = CGAffineTransformMakeScale(0, 0);
+//            self.transform = CGAffineTransformMakeScale(0, 0);
         }];
         
     }];
@@ -96,6 +93,10 @@
 }
 
 - (void)pulseGrowViewWithDelay:(CGFloat)delay duration:(CGFloat)duration {
+    
+    [self.layer removeAllAnimations];
+    self.transform = CGAffineTransformMakeScale(0, 0);
+    self.alpha = 0.0;
     
     CGFloat springDamping = 0.5;
     CGFloat springVelocity = 1.0;
@@ -121,6 +122,11 @@
 
 - (void)pulseShrinkViewWithDelay:(CGFloat)delay duration:(CGFloat)duration {
     
+    [self.layer removeAllAnimations];
+    self.transform = CGAffineTransformIdentity;
+    self.alpha = 1.0;
+    
+    
     CGFloat duration1 = duration * 0.3;
     CGFloat duration2 = duration - duration1;
     
@@ -135,11 +141,12 @@
                          
                          [UIView animateWithDuration:duration2
                                           animations:^{
-                                              self.transform = CGAffineTransformMakeScale(0.01, 0.01);
-                                              self.alpha = 0.2;
+                                              self.transform = CGAffineTransformMakeScale(0.001, 0.001);
+                                              self.alpha = 0;
                                               
                                           } completion:^(BOOL finished) {
-                                              self.transform = CGAffineTransformMakeScale(0, 0);
+//                                              self.transform = CGAffineTransformMakeScale(0, 0);
+//                                              self.alpha = 1.0;
                                           }];
                      }];
 }
@@ -221,7 +228,7 @@
 }
 
 - (void)slideViewInFromOffscreenPosition:(AFAnimationOffscreenPosition)position {
-    [self slideViewInFromOffscreenPosition:position delay:0.0 duration:0.5];
+    [self slideViewInFromOffscreenPosition:position delay:0.0 duration:0.6];
 }
 
 - (void)slideViewInFromOffscreenPosition:(AFAnimationOffscreenPosition)position delay:(CGFloat)delay duration:(CGFloat)duration {

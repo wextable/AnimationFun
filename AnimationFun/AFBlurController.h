@@ -1,5 +1,5 @@
 //
-//  AFProfileViewController.h
+//  AFBlurController.h
 //  AnimationFun
 //
 //  Created by Wesley St. John on 11/5/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AFProfileViewController : UIViewController
+@interface AFBlurController : UIViewController
 
 @end

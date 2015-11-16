@@ -9,7 +9,7 @@
 #import "AFHomeViewController.h"
 #import "AFCircleTransitionObject.h"
 #import "AFToggleButtonView.h"
-#import "AFProfileViewController.h"
+#import "AFBlurController.h"
 #import "AFUIViewCollectionAnimator.h"
 #import "UIView+AFAnimation.h"
 #import "AFOptionsController.h"
@@ -24,6 +24,7 @@
 
 
 @implementation AFHomeViewController
+
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -45,7 +46,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    self.title = @"Animating Collections";
+    
     self.navigationController.delegate = self;
     
     [self.btnStar setSelected:YES animated:NO];
@@ -121,7 +124,7 @@
 
 
 - (IBAction)circleTapped:(UIButton *)sender {
-    
+
     self.btnLaunchingTransition = sender;
     
     [self performSegueWithIdentifier:@"segueCircle" sender:sender];
@@ -136,6 +139,8 @@
         AFOptionsController *optionsController = segue.destinationViewController;
         optionsController.options = self.options;
     }
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 
@@ -144,18 +149,19 @@
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
     
     
-    if ([NSStringFromClass(fromVC.class) isEqualToString:@"AFHomeViewController"] && [NSStringFromClass(toVC.class) isEqualToString:@"AFProfileViewController"]) {
+    if ([NSStringFromClass(fromVC.class) isEqualToString:@"AFHomeViewController"] && [NSStringFromClass(toVC.class) isEqualToString:@"AFBlurController"]) {
         self.transitionObject.reversing = NO;
         self.transitionObject.launchingView = self.btnLaunchingTransition;
         return self.transitionObject;
     }
         
-    if ([NSStringFromClass(fromVC.class) isEqualToString:@"AFProfileViewController"] && [NSStringFromClass(toVC.class) isEqualToString:@"AFHomeViewController"]) {
+    if ([NSStringFromClass(fromVC.class) isEqualToString:@"AFBlurController"] && [NSStringFromClass(toVC.class) isEqualToString:@"AFHomeViewController"]) {
         self.transitionObject.reversing = YES;
         return self.transitionObject;
     }
     
     return nil;
 }
+
 
 @end
