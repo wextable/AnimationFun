@@ -58,7 +58,7 @@ import UIKit
     }
 
     func processBlurWithMaxRadius(maxBlurRadius: Float,
-        inputImage: UIImage!,
+        inputImage: UIImage?,
         quality: AFProgressiveBlurViewQuality,
         completion: (() -> Void)?
         ) {
@@ -66,26 +66,31 @@ import UIKit
             self.maxBlurRadius = maxBlurRadius
             self.numBlurStages = quality.rawValue
             
-            self.images = [inputImage]
-            
-            
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-                for blurIndex in 0...self.numBlurStages {
-                    
-                    let blurAmount = self.maxBlurRadius * ( Float(blurIndex + 1) / Float(self.numBlurStages));
-                    
-                    let blurredImage = inputImage.applyBlurWithRadius(CGFloat(blurAmount), tintColor: nil, saturationDeltaFactor: 1, maskImage: nil)
-                    self.images.append(blurredImage)
-                    
-                }
+            if let image = inputImage {
+                self.images = [image]
                 
-                dispatch_async(dispatch_get_main_queue()) {
-                    if let completionBlock = completion {
-                        completionBlock()
+                
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+                    for blurIndex in 0...self.numBlurStages {
+                        
+                        let blurAmount = self.maxBlurRadius * ( Float(blurIndex + 1) / Float(self.numBlurStages));
+                        
+                        let blurredImage = image.applyBlurWithRadius(CGFloat(blurAmount), tintColor: nil, saturationDeltaFactor: 1, maskImage: nil)
+                        self.images.append(blurredImage)
+                        
                     }
+                    
+                    dispatch_async(dispatch_get_main_queue()) {
+                        if let completionBlock = completion {
+                            completionBlock()
+                        }
+                    }
+                    
                 }
-                
+            } else {
+                print("No input image!")
             }
+
     }
 
 }
