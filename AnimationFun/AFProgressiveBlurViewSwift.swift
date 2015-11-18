@@ -66,29 +66,30 @@ import UIKit
             self.maxBlurRadius = maxBlurRadius
             self.numBlurStages = quality.rawValue
             
-            if let image = inputImage {
-                self.images = [image]
-                
-                
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-                    for blurIndex in 0...self.numBlurStages {
-                        
-                        let blurAmount = self.maxBlurRadius * ( Float(blurIndex + 1) / Float(self.numBlurStages));
-                        
-                        let blurredImage = image.applyBlurWithRadius(CGFloat(blurAmount), tintColor: nil, saturationDeltaFactor: 1, maskImage: nil)
-                        self.images.append(blurredImage)
-                        
-                    }
+            guard let image = inputImage else {
+                print("No input image!")
+                return;
+            }
+            
+            self.images = [image]
+            
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+                for blurIndex in 0...self.numBlurStages {
                     
-                    dispatch_async(dispatch_get_main_queue()) {
-                        if let completionBlock = completion {
-                            completionBlock()
-                        }
-                    }
+                    let blurAmount = self.maxBlurRadius * ( Float(blurIndex + 1) / Float(self.numBlurStages));
+                    
+                    let blurredImage = image.applyBlurWithRadius(CGFloat(blurAmount), tintColor: nil, saturationDeltaFactor: 1, maskImage: nil)
+                    self.images.append(blurredImage)
                     
                 }
-            } else {
-                print("No input image!")
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    if let completionBlock = completion {
+                        completionBlock()
+                    }
+                }
+                
             }
 
     }
