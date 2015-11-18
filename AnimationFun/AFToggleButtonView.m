@@ -6,19 +6,6 @@
 //  Copyright © 2015 Mobileforming. All rights reserved.
 //
 
-
-/*
- 
-Design Shots - Dribbble client: https://youtu.be/n5FZrG0aLk4 = 
-    Circle mask transition, pull down cross fade, circle scale 0 to 1 with spin, hold down = scale down and fade with menu pop up
- 
- 
- http://www.raywenderlich.com/72166/best-ios-7-animations-call-nominees =
-    swipe with paralax, staggered push transition for cells
- 
- */
-
-
 #import "AFToggleButtonView.h"
 
 #import "UIView+AFAnimation.h"

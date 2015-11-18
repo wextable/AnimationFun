@@ -34,6 +34,7 @@
 		657074A81BEC614C00F623B6 /* AFCircleTransitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 657074A71BEC614C00F623B6 /* AFCircleTransitionObject.m */; };
 		657074AA1BEC808E00F623B6 /* wes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 657074A91BEC808E00F623B6 /* wes@2x.png */; };
 		6590F58D1BFA9CAF009879FC /* AFIntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590F58C1BFA9CAF009879FC /* AFIntroController.m */; };
+		6590F5901BFAA730009879FC /* AFProgressiveBlurViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590F58F1BFAA730009879FC /* AFProgressiveBlurViewSwift.swift */; };
 		65A62FEA1BEBB8B400F3E2DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FE91BEBB8B400F3E2DF /* main.m */; };
 		65A62FED1BEBB8B400F3E2DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FEC1BEBB8B400F3E2DF /* AppDelegate.m */; };
 		65A62FF01BEBB8B400F3E2DF /* AFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A62FEF1BEBB8B400F3E2DF /* AFHomeViewController.m */; };
@@ -46,6 +47,7 @@
 		65D837E71BF6BFAB00F1510B /* heroes_wide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D837E61BF6BFAB00F1510B /* heroes_wide@2x.png */; };
 		65F7D8E91BF073330015235C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7D8E81BF073330015235C /* CoreImage.framework */; };
 		65F7D8ED1BF075460015235C /* heroes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F7D8EC1BF075460015235C /* heroes@2x.png */; };
+		65FB34281BFBE0650005B384 /* AFProgressiveCrossfadeViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB34271BFBE0650005B384 /* AFProgressiveCrossfadeViewSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		657074A91BEC808E00F623B6 /* wes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wes@2x.png"; sourceTree = "<group>"; };
 		6590F58B1BFA9CAF009879FC /* AFIntroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFIntroController.h; sourceTree = "<group>"; };
 		6590F58C1BFA9CAF009879FC /* AFIntroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFIntroController.m; sourceTree = "<group>"; };
+		6590F58E1BFAA72F009879FC /* AnimationFun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationFun-Bridging-Header.h"; sourceTree = "<group>"; };
+		6590F58F1BFAA730009879FC /* AFProgressiveBlurViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFProgressiveBlurViewSwift.swift; sourceTree = "<group>"; };
 		65A62FE51BEBB8B400F3E2DF /* AnimationFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A62FE91BEBB8B400F3E2DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65A62FEB1BEBB8B400F3E2DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		65D837E61BF6BFAB00F1510B /* heroes_wide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heroes_wide@2x.png"; sourceTree = "<group>"; };
 		65F7D8E81BF073330015235C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		65F7D8EC1BF075460015235C /* heroes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heroes@2x.png"; sourceTree = "<group>"; };
+		65FB34271BFBE0650005B384 /* AFProgressiveCrossfadeViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFProgressiveCrossfadeViewSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +138,10 @@
 				6590F58C1BFA9CAF009879FC /* AFIntroController.m */,
 				65A62FEE1BEBB8B400F3E2DF /* AFHomeViewController.h */,
 				65A62FEF1BEBB8B400F3E2DF /* AFHomeViewController.m */,
-				657074A11BEC603600F623B6 /* AFBlurController.h */,
-				657074A21BEC603600F623B6 /* AFBlurController.m */,
 				650E78C51BEE7AC1008274B5 /* AFOptionsController.h */,
 				650E78C61BEE7AC1008274B5 /* AFOptionsController.m */,
+				657074A11BEC603600F623B6 /* AFBlurController.h */,
+				657074A21BEC603600F623B6 /* AFBlurController.m */,
 				65D837C11BF6704900F1510B /* AFTableController.h */,
 				65D837C21BF6704900F1510B /* AFTableController.m */,
 			);
@@ -183,6 +188,7 @@
 		65A62FE71BEBB8B400F3E2DF /* AnimationFun */ = {
 			isa = PBXGroup;
 			children = (
+				6590F58E1BFAA72F009879FC /* AnimationFun-Bridging-Header.h */,
 				650E78A31BED4A83008274B5 /* Helpers */,
 				657074A51BEC613800F623B6 /* Transitions */,
 				657074A41BEC612400F623B6 /* Categories */,
@@ -245,6 +251,8 @@
 				6517C5FF1BF54DC1007F0195 /* AFProgressiveBlurView.m */,
 				6510F1F41BF5BB2A00A9C8BA /* AFProgressiveBlurCrossfadeView.h */,
 				6510F1F51BF5BB2A00A9C8BA /* AFProgressiveBlurCrossfadeView.m */,
+				6590F58F1BFAA730009879FC /* AFProgressiveBlurViewSwift.swift */,
+				65FB34271BFBE0650005B384 /* AFProgressiveCrossfadeViewSwift.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 			files = (
 				65A62FF01BEBB8B400F3E2DF /* AFHomeViewController.m in Sources */,
 				6590F58D1BFA9CAF009879FC /* AFIntroController.m in Sources */,
+				65FB34281BFBE0650005B384 /* AFProgressiveCrossfadeViewSwift.swift in Sources */,
 				6570749E1BEC208700F623B6 /* UIView+AFAnimation.m in Sources */,
 				6517C6001BF54DC1007F0195 /* AFProgressiveBlurView.m in Sources */,
 				65A62FED1BEBB8B400F3E2DF /* AppDelegate.m in Sources */,
@@ -354,6 +363,7 @@
 				650E78A61BED4A9B008274B5 /* AFUIViewCollectionAnimator.m in Sources */,
 				6510F1F61BF5BB2A00A9C8BA /* AFProgressiveBlurCrossfadeView.m in Sources */,
 				65A630051BEBBCB300F3E2DF /* AFToggleButtonView.m in Sources */,
+				6590F5901BFAA730009879FC /* AFProgressiveBlurViewSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +473,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AnimationFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobileforming.AnimationFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationFun/AnimationFun-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -474,10 +487,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AnimationFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobileforming.AnimationFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationFun/AnimationFun-Bridging-Header.h";
 			};
 			name = Release;
 		};

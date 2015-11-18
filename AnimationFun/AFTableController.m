@@ -7,11 +7,11 @@
 //
 
 #import "AFTableController.h"
-#import "AFProgressiveBlurView.h"
+#import "AnimationFun-Swift.h"
 
 @interface AFTableController ()
 @property (nonatomic, strong) IBOutlet UIView *headerContentView;
-@property (nonatomic, strong) IBOutlet AFProgressiveBlurView *blurView;
+@property (nonatomic, strong) IBOutlet AFProgressiveCrossfadeViewSwift *blurView;
 @end
 
 @implementation AFTableController
@@ -29,7 +29,7 @@
     __weak typeof(self) wself = self;
     [self.blurView processBlurWithMaxRadius:10.0
                                  inputImage:imageToBlur
-                                    quality:AFProgressiveBlurViewQualityMedium competion:^{
+                                    quality:AFProgressiveBlurViewQualityMedium completion:^{
                                         //sweet
                                         wself.blurView.blurriness = 1.0;
                                     }];

@@ -7,11 +7,11 @@
 //
 
 #import "AFBlurController.h"
-#import "AFProgressiveBlurView.h"
+#import "AnimationFun-Swift.h"
 
 @interface AFBlurController ()
 
-@property (nonatomic, strong) IBOutlet AFProgressiveBlurView *blurView;
+@property (nonatomic, strong) IBOutlet AFProgressiveBlurViewSwift *blurView;
 @property (nonatomic, strong) IBOutlet UISlider *blurSlider;
 @property (nonatomic, strong) IBOutlet UIButton *btnStar;
 
@@ -29,7 +29,8 @@
     
     UIImage *imageToBlur = [UIImage imageNamed:@"heroes"];
     __weak typeof(self) wself = self;
-    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:AFProgressiveBlurViewQualityLow competion:^{
+    
+    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:AFProgressiveBlurViewQualityLow completion:^{
         wself.blurSlider.value = 0.0;
         wself.blurView.blurriness = 0.0;
     }];
@@ -45,7 +46,7 @@
     
     UIImage *imageToBlur = [UIImage imageNamed:@"heroes"];
     __weak typeof(self) wself = self;
-    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:sender.tag competion:^{
+    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:sender.tag completion:^{
         wself.blurSlider.value = 0.0;
         wself.blurView.blurriness = 0.0;
     }];

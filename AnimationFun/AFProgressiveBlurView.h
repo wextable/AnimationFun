@@ -24,6 +24,6 @@ typedef void(^AFProgressiveBlurViewProcessedBlock)();
 
 @property (nonatomic, assign) CGFloat blurriness;
 
-- (void)processBlurWithMaxRadius:(CGFloat)maxBlurRadius inputImage:(UIImage *)inputImage quality:(AFProgressiveBlurViewQuality)quality competion:(AFProgressiveBlurViewProcessedBlock)completion;
+- (void)processBlurWithMaxRadius:(CGFloat)maxBlurRadius inputImage:(UIImage *)inputImage quality:(AFProgressiveBlurViewQuality)quality completion:(AFProgressiveBlurViewProcessedBlock)completion;
 
 @end

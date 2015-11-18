@@ -31,7 +31,7 @@
 - (void)processBlurWithMaxRadius:(CGFloat)maxBlurRadius
                       inputImage:(UIImage *)inputImage
                          quality:(AFProgressiveBlurViewQuality)quality
-                       competion:(AFProgressiveBlurViewProcessedBlock)completion {
+                       completion:(AFProgressiveBlurViewProcessedBlock)completion {
     
     _maxBlurRadius = maxBlurRadius;
     _numBlurStages = quality;
