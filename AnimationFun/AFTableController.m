@@ -7,11 +7,11 @@
 //
 
 #import "AFTableController.h"
-#import "AnimationFun-Swift.h"
+#import "AFProgressiveBlurCrossfadeView.h"
 
 @interface AFTableController ()
 @property (nonatomic, strong) IBOutlet UIView *headerContentView;
-@property (nonatomic, strong) IBOutlet AFProgressiveCrossfadeViewSwift *blurView;
+@property (nonatomic, strong) IBOutlet AFProgressiveBlurCrossfadeView *blurView;
 @end
 
 @implementation AFTableController
@@ -25,14 +25,14 @@
     self.tableView.rowHeight = 60;
     self.tableView.tableFooterView = [UIView new];
     
-//    UIImage *imageToBlur = [UIImage imageNamed:@"heroes_wide"];
-//    __weak typeof(self) wself = self;
-//    [self.blurView processBlurWithMaxRadius:10.0
-//                                 inputImage:imageToBlur
-//                                    quality:AFProgressiveBlurViewQualityMedium completion:^{
-//                                        //sweet
-//                                        wself.blurView.blurriness = 1.0;
-//                                    }];
+    UIImage *imageToBlur = [UIImage imageNamed:@"heroes_wide"];
+    __weak typeof(self) wself = self;
+    [self.blurView processBlurWithMaxRadius:10.0
+                                 inputImage:imageToBlur
+                                    quality:AFProgressiveBlurViewQualityHigh completion:^{
+                                        //sweet
+                                        wself.blurView.blurriness = 1.0;
+                                    }];
 
 }
 

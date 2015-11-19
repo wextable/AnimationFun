@@ -72,6 +72,8 @@
 
 -(void)setBlurriness:(CGFloat)blurriness {
     
+    _blurriness = MIN(1.0, MAX(0.0, blurriness));
+    
     CGFloat blurFactor = blurriness * self.numBlurStages + 1;
     NSInteger blurIndex = (NSInteger)blurFactor;
     CGFloat blurRemainder = blurFactor - blurIndex;
