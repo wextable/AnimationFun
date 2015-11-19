@@ -27,13 +27,32 @@
     UIImage *imgStar = [self.btnStar imageForState:UIControlStateNormal];
     [self.btnStar setImage:[imgStar imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     
-    UIImage *imageToBlur = [UIImage imageNamed:@"heroes"];
+    UIImage *imageToBlur;// = [UIImage imageNamed:@"heroes"];
     __weak typeof(self) wself = self;
     
-    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:AFProgressiveBlurViewQualityLow completion:^{
+    NSError *error;
+    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:AFProgressiveBlurViewQualityLow error:&error completion:^{
         wself.blurSlider.value = 0.0;
         wself.blurView.blurriness = 0.0;
     }];
+    if (error) {
+        
+        
+        
+        NSLog(@"%@", error.description);
+    }
+
+
+//    @try {
+//        [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:AFProgressiveBlurViewQualityLow error:&error completion:^{
+//            wself.blurSlider.value = 0.0;
+//            wself.blurView.blurriness = 0.0;
+//        }];
+//    }
+//    @catch (NSException *exception) {
+//        NSLog(@"%@", exception.description);
+//    }
+
 }
 
 
@@ -44,12 +63,12 @@
 
 - (IBAction)qualityButtonTapped:(UIBarButtonItem *)sender {
     
-    UIImage *imageToBlur = [UIImage imageNamed:@"heroes"];
-    __weak typeof(self) wself = self;
-    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:sender.tag completion:^{
-        wself.blurSlider.value = 0.0;
-        wself.blurView.blurriness = 0.0;
-    }];
+//    UIImage *imageToBlur = [UIImage imageNamed:@"heroes"];
+//    __weak typeof(self) wself = self;
+//    [self.blurView processBlurWithMaxRadius:15.0 inputImage:imageToBlur quality:sender.tag completion:^{
+//        wself.blurSlider.value = 0.0;
+//        wself.blurView.blurriness = 0.0;
+//    }];
     
 }
 

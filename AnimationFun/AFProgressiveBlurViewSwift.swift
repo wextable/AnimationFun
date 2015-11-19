@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum ProgressiveBlurError: ErrorType {
+    case MissingInputImage
+    case BlurRadiusOutOfRange
+}
 
 @objc enum AFProgressiveBlurViewQuality: Int {
     case Low = 1
@@ -61,14 +65,18 @@ import UIKit
         inputImage: UIImage?,
         quality: AFProgressiveBlurViewQuality,
         completion: (() -> Void)?
-        ) {
+        ) throws {
 
+            if maxBlurRadius < 0 || maxBlurRadius > 100 {
+                throw ProgressiveBlurError.BlurRadiusOutOfRange
+            }
+            
             self.maxBlurRadius = maxBlurRadius
             self.numBlurStages = quality.rawValue
             
             guard let image = inputImage else {
                 print("No input image!")
-                return;
+                throw ProgressiveBlurError.MissingInputImage
             }
             
             self.images = [image]
